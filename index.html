@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css" integrity="sha512-lauN4D/0AgFUGvmMR+knQnbOADyD/XuQ8VF18I8Ll0+TLvsujshyxvU+uzogmQbSq6qJd5jnUdYtK8ShxXMlSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="import" href="./pages/signin.html" />
+    <link rel="import" href="./pages/signup.html" />
+    <!-- <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
+    /> -->
+    <link rel="import" href="Metal_RollupMetalRusted.jpg" />
+    <link rel="import" href="fidget-spinner.png" />
+    <link rel="import" href="/img/feature1.png" />
+    <link rel="import" href="/img/feature2.png" />
+    <link rel="import" href="/amazon.png" />
+
+    <title>
+      Online Shopping site: Shop Online for Mobiles, Books, Watches, Shoes and
+      More
+    </title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- top-bar -->
+      <div class="top-bar">
+        <div class="nav-left">
+          <a href="/" class="nav-logo">
+            <img
+              src="/amazon.png"
+              alt="Amazon"
+            />
+          </a>
+          <a href="/" class="nav-deliver border-white">
+            <div>
+              <span class="small-txt">Deliver to</span>
+              <p>Ethiopia</p>
+            </div>
+            <i class="downarrow-icon">4</i>
+          </a>
+        </div>
+
+        <div class="nav-fill">
+          <div class="search-left">
+            <p>All</p>
+            <i class="downarrow-icon">4</i>
+          </div>
+          <div class="search-fill">
+            <input type="text" placeholder="Search Amazon" />
+          </div>
+          <div class="search-right">
+            <i class="search-icon">4</i>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-lang border-white">
+            <a>
+              <i class="country-flag-icon flag">EN</i>
+              <div class="english">
+                <p>EN</p>
+                <i class="dropdown-arrow">1</i>
+              </div>
+            </a>
+          </div>
+
+          <div class="btn-cta border-white">
+            <span class="small-txt">Hello, sigin</span>
+            <p>Account &amp; Lists</p>
+          </div>
+
+          <div class="return border-white">
+            <span class="small-txt">Returns</span>
+            <p>&amp; Orders</p>
+          </div>
+
+          <div class="btn-cart border-white">
+            <i class="addToCart"></i>
+            <p>Cart</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav-bar -->
+      <div class="nav-bar">
+        <div class="menu-all">
+          <i class="menubar">0</i>
+          <button onclick=(showMenu)>All</button>
+        </div>
+        <div class="nav-all">
+          <ul>
+            <li class="border-white"><a href="/">Best Sellers</a></li>
+            <li class="border-white"><a href="/">Today's Deals</a></li>
+            <li class="border-white"><a href="/">Mobiles</a></li>
+            <li class="border-white"><a href="/">Customer Service</a></li>
+            <li class="border-white"><a href="/">Electronics</a></li>
+            <li class="border-white"><a href="/">Home &amp; Kitchen</a></li>
+            <!-- <li class="border-white"><a href="/">Fashion</a></li>
+          <li class="border-white"><a href="/">Book</a></li> -->
+            <li class="border-white"><a href="/">Prime</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+       <div class="menu">
+
+       </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main Body -->
+    <!-- Banner | Image Slider -->
+    <main>
+      <section class="banner">
+        <div class="banner-container">
+          <div class="banner-image_container">
+            <div class="image-item">
+              <img src="/Metal_RollupMetalRusted.jpg" />
+            </div>
+            <div class="image-item">
+              <img
+                src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg"
+              />
+            </div>
+          </div>
+
+          <!-- SLIDER BUTTONS -->
+          <button class="btn-slider_left" id="btn-slider_left">
+            <div class="span-container">
+              <span class="btn"></span>
+              <span class="btn"></span>
+            </div>
+          </button>
+          <button class="btn-slider_right" id="btn-slider_right">
+            <div class="span-container">
+              <span class="btn"></span>
+              <span class="btn"></span>
+            </div>
+          </button>
+
+          <!-- <div class="btn-slider_right" id="btn-slider_right">
+            <div class="span-container">
+              <span class="btn"></span>
+              <span class="btn"></span>
+            </div>
+          </div> -->
+          
+        </div>
+      </section>
+
+      <!-- Product Display | Grids -->
+
+      <section class="products-grid container">
+        <div class="products-container">
+          <div class="product-container">
+            <h2 class="grid-item-title">Up to 60% off | Styles for men</h2>
+            <div class="item-detail small-gap">
+              <div class="product-image_container no-names">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <!-- <h3 class="sub-title">Clothing</h3> -->
+              </div>
+              <div class="product-image_container no-names">
+                <img src="fidget-spinner.png" alt="" />
+                <!-- <h3 class="sub-title">Footwear</h3> -->
+              </div>
+              <div class="product-image_container no-names">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <!-- <h3 class="sub-title">Watches</h3> -->
+              </div>
+              <div class="product-image_container no-names">
+                <img src="fidget-spinner.png" alt="" />
+                <!-- <h3 class="sub-title">Bags & language</h3> -->
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">Redefine your living room</h2>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Sofa cum beds</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Office chairs & study</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Bean bags</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Explore all</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">Visit our furniture store</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">
+              Top rated, premium quality | Amazon Brands
+            </h2>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Home Products</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Furniture</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Daily essentials</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Fashion</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">
+              Top rated, premium quality | Amazon Brands
+            </h2>
+            <div class="item-detail row-span">
+              <div class="product-image_container full-span">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Home Products</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Furniture</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Daily essentials</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Fashion</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+        </div>
+
+
+        <div class="products-container">
+          <div class="product-container">
+            <h2 class="grid-item-title">Up to 60% off | Styles for men</h2>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Clothing</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Footwear</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Watches</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Bags & language</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">Redefine your living room</h2>
+            <div class="item-detail  row-span">
+              <div class="product-image_container full-span">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Sofa cum beds</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Office chairs & study</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Bean bags</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Explore all</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">Visit our furniture store</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">
+              Top rated, premium quality | Amazon Brands
+            </h2>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Home Products</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Furniture</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Daily essentials</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Fashion</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+          <div class="product-container">
+            <h2 class="grid-item-title">
+              Top rated, premium quality | Amazon Brands
+            </h2>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Home Products</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Furniture</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="fidget-spinner.png" alt="" />
+                <h3 class="sub-title">Daily essentials</h3>
+              </div>
+              <div class="product-image_container">
+                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <h3 class="sub-title">Fashion</h3>
+              </div>
+            </div>
+            <a href="/" class="link-light">see more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN PRODUCTS -->
+      <section class="container">
+        <div class="main-products">
+          <h3>Best Sellers In Toys &amp; Games</h3>
+          <div class="main-image_items">
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+            <a href="/">
+              <div class="main-img_item">
+                <img src="/img/feature1.png" alt="" />
+              </div>
+            </a>
+
+          </div>
+          
+          <button class="left_btn">L</button>
+          <button class="right_btn">R</button>
+          
+        </div>
+
+        <!-- <div class="main-products">
+          <div class="main-products_title">
+            <h3>Gift Ideas In Headphones &amp; Earbuds</h3>
+            <a href="/">Show more</a>
+          </div>
+          <div class="main-image_items">
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+
+            <button class="left_btn">L</button>
+            <button class="right_btn">R</button>
+          </div>
+        </div>
+
+        <div class="main-products">
+          <h3>Best Sellers In Sports &amp; Outdoors</h3>
+          <div class="main-image_items">
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+
+            <button class="left_btn">L</button>
+            <button class="right_btn">R</button>
+          </div>
+        </div>
+        <div class="main-products">
+          <h3>Best Sellers In Books</h3>
+          <div class="main-image_items">
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+
+            <button class="left_btn">L</button>
+            <button class="right_btn">R</button>
+          </div>
+        </div>
+        <div class="main-products">
+          <h3>Best Sellers In Clothings, Shoes &amp; Jewlery</h3>
+          <div class="main-image_items">
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href="/"><img src="/img/feature1.png" alt="" /></a>
+            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+
+            <button class="left_btn">L</button>
+            <button class="right_btn">R</button>
+          </div>
+        </div> -->
+      </section>
+
+      <!--    TODAY'S DEALS     -->
+      <!-- 
+    <section>
+      <div class="todays-deal container">
+        <div class="today-deal">
+          <div class="deals-title">
+            <h3>Today's Deals</h3>
+            <a href="/" class="link-light">Sea all deals</a>
+          </div>
+          <div class="deals-image">
+            <img src="/fidget-spinner.png" alt="" />
+          </div>
+          <div class="off-deals">
+            <p class="deals-color">Upto 52% off</p>
+            <p>Deals of the day</p>
+          </div>
+          <p class="deals-name">Adidas &amp; Campus Footwear</p>
+        </div>
+      </div>
+    </section> -->
+
+      <section class="sign-section">
+        <div class="home-signin">
+          <h3>See personalised recommandation</h3>
+          <a href="/signin.html" class="sign-btn_cta">Signin</a>
+          <div class="signup-sect">
+            <p>New customer ?</p>
+            <a href="/signup.html">Start here</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+      <!-- FOOOTER SETION -->
+
+    <footer>
+      <section class="footer">
+        <div class="footer-top">
+          <div class="back-to_top">back to top</div>
+          <div class="footer-top_articles">
+            <article>
+              <h3>Get to Know Us</h3>
+              <ul>
+                <li><button>Careers</button></li>
+                <li><button>Amazon Newsletter</button></li>
+                <li><button>About Amazon</button></li>
+                <li><button>Accessibility</button></li>
+                <li><button>Sustainability</button></li>
+                <li><button>Press Center</button></li>
+                <li><button>Investor Relations</button></li>
+                <li><button>Amazon Devices</button></li>
+                <li><button>Amazon Science</button></li>
+              </ul>
+            </article>
+            <article>
+              <h3>Make Money With Us</h3>
+              <ul>
+                <li><button>Sell on Amazon</button></li>
+                <li><button>Sell apps on Amazon</button></li>
+                <li><button>Supply to Amazon</button></li>
+                <li><button>Product &amp; Build Your Brand</button></li>
+                <li><button>Become an Affiliate</button></li>
+                <li><button>Become a Delivery Service</button></li>
+                <li><button>Start a Package Delivery Bussines</button></li>
+                <li><button>Advertise Your Products</button></li>
+                <li><button>Self-Publish with Us</button></li>
+                <li><button>Become an Amazon Hub Partner</button></li>
+                <li><button>> See More Ways to Make Money</button></li>
+              </ul>
+            </article>
+            <article>
+              <h3>Get to Know Us</h3>
+              <ul>
+                <li><button>Careers</button></li>
+                <li><button>Amazon Newsletter</button></li>
+                <li><button>About Amazon</button></li>
+                <li><button>Accessibility</button></li>
+                <li><button>Sustainability</button></li>
+                <li><button>Press Center</button></li>
+                <li><button>Investor Relations</button></li>
+                <li><button>Amazon Devices</button></li>
+                <li><button>Amazon Science</button></li>
+              </ul>
+            </article>
+            <article>
+              <h3>Make Money With Us</h3>
+              <ul>
+                <li><button>Sell on Amazon</button></li>
+                <li><button>Sell apps on Amazon</button></li>
+                <li><button>Supply to Amazon</button></li>
+                <li><button>Product &amp; Build Your Brand</button></li>
+                <li><button>Become an Affiliate</button></li>
+                <li><button>Become a Delivery Service</button></li>
+                <li><button>Start a Package Delivery Bussines</button></li>
+                <li><button>Advertise Your Products</button></li>
+                <li><button>Self-Publish with Us</button></li>
+                <li><button>Become an Amazon Hub Partner</button></li>
+                <li><button>> See More Ways to Make Money</button></li>
+              </ul>
+            </article>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="choose-country_container">
+            <a href="/" class="footer-top_logo"><img src="/amazon.png" alt="" /></a>
+            <div class="choose-country">
+              <i>l</i>
+              <a href="/">English</a>
+              <i>v</i>
+            </div>
+            <div class="choose-country">
+              <i>l</i>
+              <a href="/">United States</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom_container">
+            <div class="btm-articles_container">
+              <article>
+                <span>Amazon Music</span>
+                <p>Stream Millions of Songs</p>
+              </article>
+              <article>
+                <span>Amazon Ads</span>
+                <p>Reach customers wherever they spend their time</p>
+              </article>
+              <article>
+                <span>6pm</span>
+                <p>Score deals on fashion brands</p>
+              </article>
+              <article>
+                <span>AbeBooks</span>
+                <p>books, arts &amp; collectibles</p>
+              </article>
+              <article>
+                <span>ACX</span>
+                <p>Audio Book Made Easy</p>
+              </article>
+              <article>
+                <span>Sell on Amazon</span>
+                <p>Start a Selling Account</p>
+              </article>
+              <article>
+                <span>Veeqo</span>
+                <p>Shopping Software Inventory Management</p>
+              </article>
+            </div>
+            
+            <div class="btm-articles_container">
+              <article>
+                <span>Amazon Music</span>
+                <p>Stream Millions of Songs</p>
+              </article>
+              <article>
+                <span>Amazon Ads</span>
+                <p>Reach customers wherever they spend their time</p>
+              </article>
+              <article>
+                <span>6pm</span>
+                <p>Score deals on fashion brands</p>
+              </article>
+              <article>
+                <span>AbeBooks</span>
+                <p>books, arts &amp; collectibles</p>
+              </article>
+              <article>
+                <span>ACX</span>
+                <p>Audio Book Made Easy</p>
+              </article>
+              <article>
+                <span>Sell on Amazon</span>
+                <p>Start a Selling Account</p>
+              </article>
+              <article>
+                <span>Veeqo</span>
+                <p>Shopping Software Inventory Management</p>
+              </article>
+            </div>
+            <div class="btm-articles_container">
+              <article>
+                <span>Amazon Music</span>
+                <p>Stream Millions of Songs</p>
+              </article>
+              <article>
+                <span>Amazon Ads</span>
+                <p>Reach customers wherever they spend their time</p>
+              </article>
+              <article>
+                <span>6pm</span>
+                <p>Score deals on fashion brands</p>
+              </article>
+              <article>
+                <span>AbeBooks</span>
+                <p>books, arts &amp; collectibles</p>
+              </article>
+              <article>
+                <span>ACX</span>
+                <p>Audio Book Made Easy</p>
+              </article>
+              <article>
+                <span>Sell on Amazon</span>
+                <p>Start a Selling Account</p>
+              </article>
+              <article>
+                <span>Veeqo</span>
+                <p>Shopping Software Inventory Management</p>
+              </article>
+            </div>
+            <div class="btm-articles_container">
+              <article>
+                <span>Amazon Music</span>
+                <p>Stream Millions of Songs</p>
+              </article>
+              <article>
+                <span>Amazon Ads</span>
+                <p>Reach customers wherever they spend their time</p>
+              </article>
+              <article>
+                <span>6pm</span>
+                <p>Score deals on fashion brands</p>
+              </article>
+              <article>
+                <span>AbeBooks</span>
+                <p>books, arts &amp; collectibles</p>
+              </article>
+              <article>
+                <span>ACX</span>
+                <p>Audio Book Made Easy</p>
+              </article>
+              <article>
+                <span>Sell on Amazon</span>
+                <p>Start a Selling Account</p>
+              </article>
+              <article>
+                <span>Veeqo</span>
+                <p>Shopping Software Inventory Management</p>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="conditions-container">
+            <div class="condition-items">
+              <ul>
+                <li><a href="/">Conditions of Use</a></li>
+                <li><a href="/">Privacy Notice</a></li>
+                <li><a href="/">Customer Health Data Privacy Disclosure</a></li>
+                <li><a href="/">Your Ads Privacy Choices</a></li>
+                <i>icon</i>
+              </ul>
+            </div>
+            <p class="copy-right_txt">&copy; 1996-2024, Amazon.com, Inc. or it's affiliates</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- IMPORT SCRIPT -->
+  <script src="script.js"></script>
+  </body>
+
+</html>
