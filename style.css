@@ -4,6 +4,11 @@
 https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png
 */
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -74,7 +79,7 @@ p {
 }
 
 .container {
-  width: 93%;
+  width: 97%;
   margin: auto;
 }
 
@@ -236,9 +241,16 @@ p {
 }
 .nav-right .nav-lang .english {
   display: flex;
+  gap: 4px;
+  
+margin-left: 4px;
   align-items: center;
 }
 
+.acc-list {
+  display: flex;
+  gap: 4px;
+}
 .nav-right .btn-cta {
   margin-inline: 10px;
   margin-block: auto;
@@ -249,12 +261,20 @@ p {
   padding: 6px 16px;
 }
 .nav-right .btn-cart {
+  display: flex;
+  gap: 4px;
   margin-right: 4px;
   padding: 14px 16px;
+}
+.btn-cart i {
+  color: #ffffff;
 }
 
 /* Navigation bar */
 
+.fa-caret-down {
+  color: lightgray;
+}
 .nav-bar {
   width: full;
   display: flex;
@@ -271,9 +291,18 @@ p {
   padding: 4px 2px;
 }
 
+#show-menu {
+  color: #ffffff;
+margin-left: 4px;
+}
+
 .menu-all .menubar {
   font-size: 14px;
   padding: 4px 2px;
+}
+.menu-all i {
+
+  color: #ffffff;
 }
 
 .nav-bar ul {
@@ -373,7 +402,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, max-content);
   gap: 16px;
-  width: 93%;
+  max-width: 97%;
   margin: auto;
   padding: 18px 2px;
 }
@@ -382,26 +411,25 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 300px;
+  width: 313px;
   background-color: #fff;
-  padding: 12px 20px;
-}
-.no-names img {
-  width: 100% !important;
-  height: 100% !important;
+  padding:  20px 20px 40px 20px;
 }
 
 .no-names {
-  width: 135px;
-  height: 125px;
+  width: 150px !important;
+  height: 140px !important;
 }
+
 
 
 .product-container .item-detail {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  gap: 16px;
+  justify-content: center;
+  gap: 30px 16px;
+  flex: 1;
+  width: 100%;
   margin-block: 4px;
   padding-block: 16px;
 }
@@ -410,14 +438,36 @@ img {
   gap: 2px !important;
 }
 
-/* make col-span = 2 */
- .row-span .full-span {
-  column-span: span 2;
+.row-span {
+  gap: 40px 4px !important;
 }
 
-.product-container .product-image_container img {
-  width: 120px;
-  height: 110px;
+
+
+/* make col-span = 2 */
+.full-span_product {
+  grid-column: 1 / span 3;
+  width: 100% !important;
+  height: 150px !important;
+}
+
+.prime-container {
+  height: 100%;
+}
+
+.join-prime_span {
+  width: 100%;
+  height: 94%;
+}
+
+.small-span_product {
+  width: 90px !important;
+  height: 84px !important;
+}
+
+.product-container .product-image_container {
+  width: 130px;
+  height: 120px;
 }
 
 .product-image_container .sub-title {
@@ -428,7 +478,7 @@ img {
 .product-container .link-light {
   position: absolute;
   bottom: 2px;
-  left: 22px;
+  left: 20px;
   margin: 4px 0;
   padding: 4px 0;
   color: rgb(25, 105, 105);
@@ -444,10 +494,7 @@ img {
   width: 280px;
   height: 180px;
 }
-.today-deal .deals-image img {
-  width: 100%;
-  height: 100%;
-}
+
 .today-deal .deals-title {
   display: flex;
   align-items: center;
@@ -460,16 +507,23 @@ img {
 
 .main-products {
   position: relative;
+  width: 100%;
+  height: 260px;
   background-color: white;
   padding: 14px 18px;
   margin: 18px 0;
-  overflow: hidden;
 }
 .main-products .main-image_items {
-  /* position: relative; */
   display: flex;
   width: 100%;
-  height: auto;
+  height: 87%;
+  gap: 12px;
+  overflow-x: hidden;
+}
+
+.main-image_items:hover {
+  overflow-x: auto;
+  transition: 3000s ease-in;
 }
 
 /* .main-products .small-slide_btn {
@@ -478,27 +532,42 @@ img {
   align-items: center;
   top: 50%;
 } */
+.main-products:hover .right_btn, .left_btn {
+  display: block;
+}
+.main-products:hover .left_btn {
+  display: block;
+}
+
+
 .left_btn {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  border: 1px solid #ccc;
-  border-radius:  0 5px 5px 0 ;
-  padding: 30px 20px;
+left: 18px;
+    transform: translateY(-50%);
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 30px 15px;
   cursor: pointer;
+transition: 1000s ease-out;
 
 }
+
+
+
+
 .right_btn {
-  /* display: none; */
+  display: none; 
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  padding: 30px 20px;
+right: 18px;
+    transform: translateY(-50%);
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 30px 15px;
   cursor: pointer;
 
 }
@@ -510,9 +579,22 @@ img {
 .main-products_title h3 {
   margin-right: 14px;
 }
+
+    /* MAIN-IMG_ITEM => CIRCLE */
+
+.main-img_item .circle {
+  width: 180px;
+  height: 180px;
+  background-color: #f3f3f3;
+  border-radius: 100%;
+  overflow: hidden;
+}
 .main-img_item {
-  width: 120px;
-  height: 110px;
+  width: 180px;
+  height: 180px;
+  background-color: #f3f3f3;
+  /* border-radius: 100%; */
+  overflow: hidden;
 }
 
 .sign-section {
@@ -552,7 +634,7 @@ img {
   align-items: center;
 }
 
-.signup-sect p {
+.signup-sect p, a {
   font-size: 12px;
   margin-right: 4px;
 }
@@ -619,13 +701,15 @@ button {
 .footer ul {
   margin: 0;
   padding: 0;
-  line-height: 20px;
+  line-height: 26px;
   margin-top: 10px;
 }
 
 .footer-top .choose-country_container {
   display: flex;
   align-items: center;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .choose-country {
@@ -636,6 +720,13 @@ button {
   padding: 3px 12px;
   margin-right: 12px;
 }
+.choose-country i {
+  color: #ffffff;
+}
+
+.img-usa {
+  width: 24px !important;
+}
 
 .footer-top_logo {
   width: 80px;
@@ -644,7 +735,7 @@ button {
 }
 
 .choose-country a {
-  margin-inline: 18px;
+  margin-inline: 8px;
   padding-inline: 4px;
   color: white;
 }
@@ -690,6 +781,13 @@ button {
   width: 90px;
   height: 100%;
 }
+.footer li:hover, li > button:hover, .btm-articles_container > article:hover {
+  text-decoration: solid #ccc underline;
+  cursor: pointer;
+}
+
+/* FOTTER-BOTTOM */
+
 .btm-articles_container article p {
   font-family: "Poppins", sans-serif;
   font-size: 11px;
@@ -705,11 +803,7 @@ button {
   gap: 12px;
 }
 
-/* .condition-items article p {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 12px;
-} */
+
 
 /* SIGIN & SIGNUP PAGE */
 

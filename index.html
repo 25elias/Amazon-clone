@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css" integrity="sha512-lauN4D/0AgFUGvmMR+knQnbOADyD/XuQ8VF18I8Ll0+TLvsujshyxvU+uzogmQbSq6qJd5jnUdYtK8ShxXMlSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="import" href="./pages/signin.html" />
     <link rel="import" href="./pages/signup.html" />
     <!-- <link
@@ -27,52 +26,58 @@
   </head>
 
   <body>
+
+
     <header class="header">
       <!-- top-bar -->
       <div class="top-bar">
         <div class="nav-left">
-          <a href="/" class="nav-logo">
+          <a href="" class="nav-logo">
             <img
               src="/amazon.png"
               alt="Amazon"
             />
           </a>
-          <a href="/" class="nav-deliver border-white">
+          <a href="" class="nav-deliver border-white">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff; margin-inline: 4px;"></i>
             <div>
               <span class="small-txt">Deliver to</span>
               <p>Ethiopia</p>
             </div>
-            <i class="downarrow-icon">4</i>
+            <i class="fa-solid fa-caret-down"></i>
           </a>
         </div>
 
         <div class="nav-fill">
           <div class="search-left">
             <p>All</p>
-            <i class="downarrow-icon">4</i>
+            <i class="fa-solid fa-caret-down" style="color: rgb(97, 94, 94);"></i>
           </div>
           <div class="search-fill">
             <input type="text" placeholder="Search Amazon" />
           </div>
           <div class="search-right">
-            <i class="search-icon">4</i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
         </div>
 
         <div class="nav-right">
           <div class="nav-lang border-white">
             <a>
-              <i class="country-flag-icon flag">EN</i>
+              <img class="img-usa" src="https://img.icons8.com/color/48/usa.png"  alt=""  />
               <div class="english">
                 <p>EN</p>
-                <i class="dropdown-arrow">1</i>
+                <i class="fa-solid fa-caret-down"></i>
               </div>
             </a>
           </div>
 
           <div class="btn-cta border-white">
             <span class="small-txt">Hello, sigin</span>
+            <div class="acc-list">
             <p>Account &amp; Lists</p>
+            <i class="fa-solid fa-caret-down"></i>
+            </div>
           </div>
 
           <div class="return border-white">
@@ -81,7 +86,7 @@
           </div>
 
           <div class="btn-cart border-white">
-            <i class="addToCart"></i>
+            <i class="fa-brands fa-opencart"></i>
             <p>Cart</p>
           </div>
         </div>
@@ -90,20 +95,20 @@
       <!-- nav-bar -->
       <div class="nav-bar">
         <div class="menu-all">
-          <i class="menubar">0</i>
-          <button onclick=(showMenu)>All</button>
+          <i class="fa-solid fa-bars"></i>
+          <button id="show-menu" onclick={showMenu}>All</button>
         </div>
         <div class="nav-all">
           <ul>
-            <li class="border-white"><a href="/">Best Sellers</a></li>
-            <li class="border-white"><a href="/">Today's Deals</a></li>
-            <li class="border-white"><a href="/">Mobiles</a></li>
-            <li class="border-white"><a href="/">Customer Service</a></li>
-            <li class="border-white"><a href="/">Electronics</a></li>
-            <li class="border-white"><a href="/">Home &amp; Kitchen</a></li>
-            <!-- <li class="border-white"><a href="/">Fashion</a></li>
-          <li class="border-white"><a href="/">Book</a></li> -->
-            <li class="border-white"><a href="/">Prime</a></li>
+            <li class="border-white"><a href="">Best Sellers</a></li>
+            <li class="border-white"><a href="">Today's Deals</a></li>
+            <li class="border-white"><a href="">Mobiles</a></li>
+            <li class="border-white"><a href="">Customer Service</a></li>
+            <li class="border-white"><a href="">Electronics</a></li>
+            <li class="border-white"><a href="">Home &amp; Kitchen</a></li>
+            <!-- <li class="border-white"><a href="">Fashion</a></li>
+          <li class="border-white"><a href="">Book</a></li> -->
+            <li class="border-white"><a href="">Prime</a></li>
           </ul>
         </div>
       </div>
@@ -113,40 +118,41 @@
 
        </div>
     </header>
-    <!-- End of Header -->
 
     <!-- Main Body -->
-    <!-- Banner | Image Slider -->
+
+      <!-- Banner | Image Slider -->
+
     <main>
       <section class="banner">
         <div class="banner-container">
           <div class="banner-image_container">
             <div class="image-item">
-              <img src="/Metal_RollupMetalRusted.jpg" />
+              <img src="https://m.media-amazon.com/images/I/81NtmkFWmRL._SX3000_.jpg" />
             </div>
             <div class="image-item">
               <img
-                src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png"
+                src="https://m.media-amazon.com/images/I/61IdUsYdUnL._SX3000_.jpg"
               />
             </div>
             <div class="image-item">
               <img
-                src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg"
+                src="https://m.media-amazon.com/images/I/81imwptImKL._SX3000_.jpg"
               />
             </div>
             <div class="image-item">
               <img
-                src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg"
+                src="https://m.media-amazon.com/images/I/712TGXZoNjL._SX3000_.jpg"
               />
             </div>
             <div class="image-item">
               <img
-                src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg"
+                src="https://m.media-amazon.com/images/I/61IdUsYdUnL._SX3000_.jpg"
               />
             </div>
             <div class="image-item">
               <img
-                src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg"
+                src="https://m.media-amazon.com/images/I/81imwptImKL._SX3000_.jpg"
               />
             </div>
           </div>
@@ -165,13 +171,6 @@
             </div>
           </button>
 
-          <!-- <div class="btn-slider_right" id="btn-slider_right">
-            <div class="span-container">
-              <span class="btn"></span>
-              <span class="btn"></span>
-            </div>
-          </div> -->
-          
         </div>
       </section>
 
@@ -180,96 +179,94 @@
       <section class="products-grid container">
         <div class="products-container">
           <div class="product-container">
-            <h2 class="grid-item-title">Up to 60% off | Styles for men</h2>
+            <h2 class="grid-item-title">Continue shopping deals</h2>
             <div class="item-detail small-gap">
               <div class="product-image_container no-names">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
-                <!-- <h3 class="sub-title">Clothing</h3> -->
+                <img src="https://m.media-amazon.com/images/I/61cZiYfWlAL._AC_SY145_.jpg" alt="" />
               </div>
               <div class="product-image_container no-names">
-                <img src="fidget-spinner.png" alt="" />
-                <!-- <h3 class="sub-title">Footwear</h3> -->
+                <img src="https://m.media-amazon.com/images/I/51zOBaxnh1L._AC_SY145_.jpg" alt="" />
               </div>
               <div class="product-image_container no-names">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
-                <!-- <h3 class="sub-title">Watches</h3> -->
+                <img src="https://m.media-amazon.com/images/I/51Y4p7JrxiL._AC_SY145_.jpg" alt="" />
               </div>
               <div class="product-image_container no-names">
-                <img src="fidget-spinner.png" alt="" />
-                <!-- <h3 class="sub-title">Bags & language</h3> -->
+                <img src="https://m.media-amazon.com/images/I/51mb-i8N5tL._AC_SY145_.jpg" alt="" />
               </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
           <div class="product-container">
             <h2 class="grid-item-title">Redefine your living room</h2>
             <div class="item-detail">
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
-                <h3 class="sub-title">Sofa cum beds</h3>
+                <img src="https://m.media-amazon.com/images/I/71MMNoSzx7L._AC_UL320_.jpg" alt="" />
+                <h3 class="sub-title">Sofa cumbeds</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71-wukhNsTL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Office chairs & study</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71rcW4mxt9L._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Bean bags</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://m.media-amazon.com/images/I/81PyXopxAZL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Explore all</h3>
               </div>
             </div>
-            <a href="/" class="link-light">Visit our furniture store</a>
+            <a href="" class="link-light">Visit our furniture store</a>
           </div>
+
           <div class="product-container">
             <h2 class="grid-item-title">
-              Top rated, premium quality | Amazon Brands
+              New on Amazon: Estee Lauder
             </h2>
             <div class="item-detail">
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/61jh-r2MLkL._SX522_.jpg" alt="" />
                 <h3 class="sub-title">Home Products</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71MMNoSzx7L._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Furniture</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/10a4f6cb-1345-4d64-a5ed-5e8b93de08e8.__CR139,0,2222,2500_PT0_SX200_V1___.jpg" alt="" />
                 <h3 class="sub-title">Daily essentials</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/1c1daea5-7795-424d-a5e0-2db891cafb01.__CR139,0,2222,2500_PT0_SX200_V1___.jpg" alt="" />
                 <h3 class="sub-title">Fashion</h3>
               </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
+
           <div class="product-container">
             <h2 class="grid-item-title">
-              Top rated, premium quality | Amazon Brands
+              The cold weather edit
             </h2>
             <div class="item-detail row-span">
-              <div class="product-image_container full-span">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+              <div class="product-image_container full-span_product">
+                <img src="https://m.media-amazon.com/images/I/711TMCuBn4L._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Home Products</h3>
               </div>
-              <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+              <div class="product-image_container small-span_product">
+                <img src="https://m.media-amazon.com/images/I/61HcZ0EJkxL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Furniture</h3>
               </div>
-              <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+              <div class="product-image_container small-span_product">
+                <img src="https://m.media-amazon.com/images/I/81C88Gi4WkL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Daily essentials</h3>
               </div>
-              <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+              <div class="product-image_container small-span_product">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2021/journeys/MGY0YzMzNTMt/MGY0YzMzNTMt-ZDUzNWMwOTYt-w379._SY304_CB655697431_.jpg" alt="" />
                 <h3 class="sub-title">Fashion</h3>
               </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
         </div>
 
@@ -279,93 +276,83 @@
             <h2 class="grid-item-title">Up to 60% off | Styles for men</h2>
             <div class="item-detail">
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/BFCM/GW/Quad_Cards/BFCM_2024_772_BFW_CM_DQC_AmazonBasics_3D_1x_v3._SY116_CB541717183_.jpg" alt="" />
                 <h3 class="sub-title">Clothing</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/BFCM/GW/Quad_Cards/BFCM_2024_768_BFW_CM_DQC_HomeImprovement_2D_1x_v3._SY116_CB541717183_.jpg" alt="" />
                 <h3 class="sub-title">Footwear</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/BFCM/GW/Quad_Cards/BFCM_2024_770_BFW_CM_DQC_Phone_Accessories_3B_1x_v3._SY116_CB541717183_.jpg" alt="" />
                 <h3 class="sub-title">Watches</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/BFCM/GW/Quad_Cards/BFCM_2024_769_BFW_CM_DQC_Furniture_3A_1x_v3._SY116_CB541717183_.jpg" alt="" />
                 <h3 class="sub-title">Bags & language</h3>
               </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
           <div class="product-container">
             <h2 class="grid-item-title">Redefine your living room</h2>
-            <div class="item-detail  row-span">
-              <div class="product-image_container full-span">
-                <img src="fidget-spinner.png" alt="" />
-                <h3 class="sub-title">Sofa cum beds</h3>
+            <div class="item-detail">
+              <div class="product-image_container">
+                <img src="https://m.media-amazon.com/images/I/71MMNoSzx7L._AC_UL320_.jpg" alt="" />
+                <h3 class="sub-title">Sofa cumbeds</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71-wukhNsTL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Office chairs & study</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71rcW4mxt9L._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Bean bags</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://m.media-amazon.com/images/I/81PyXopxAZL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Explore all</h3>
               </div>
             </div>
-            <a href="/" class="link-light">Visit our furniture store</a>
+            <a href="" class="link-light">Visit our furniture store</a>
           </div>
+
           <div class="product-container">
             <h2 class="grid-item-title">
               Top rated, premium quality | Amazon Brands
             </h2>
             <div class="item-detail">
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/81El4887iLL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Home Products</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71auEP4YYjL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Furniture</h3>
               </div>
               <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
+                <img src="https://m.media-amazon.com/images/I/81u3IS-O2vL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Daily essentials</h3>
               </div>
               <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+                <img src="https://m.media-amazon.com/images/I/71Qd32Mp7nL._AC_UL320_.jpg" alt="" />
                 <h3 class="sub-title">Fashion</h3>
               </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
+
           <div class="product-container">
             <h2 class="grid-item-title">
               Top rated, premium quality | Amazon Brands
             </h2>
-            <div class="item-detail">
-              <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
+            <div class="prime-container">
+              <div class="join-prime_span">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/BFCM/GW/Cat_Cards/BFCM_2024_ADHOC_188_DO_HP_Category_Card_DT_Handpicked_1x._SY304_CB541458297_.jpg" alt="" />
                 <h3 class="sub-title">Home Products</h3>
               </div>
-              <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
-                <h3 class="sub-title">Furniture</h3>
-              </div>
-              <div class="product-image_container">
-                <img src="fidget-spinner.png" alt="" />
-                <h3 class="sub-title">Daily essentials</h3>
-              </div>
-              <div class="product-image_container">
-                <img src="Metal_RollupMetalRusted.jpg" alt="" />
-                <h3 class="sub-title">Fashion</h3>
-              </div>
             </div>
-            <a href="/" class="link-light">see more</a>
+            <a href="" class="link-light">see more</a>
           </div>
         </div>
       </section>
@@ -375,85 +362,151 @@
         <div class="main-products">
           <h3>Best Sellers In Toys &amp; Games</h3>
           <div class="main-image_items">
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Toys_List_1X_EN._CB541659723_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Electronics_Gift_Guide_1X_EN._CB541659723_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Home_Decor_1X_EN._CB541659723_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Fashion__1X_EN._CB541659723_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://m.media-amazon.com/images/I/71-wukhNsTL._AC_UL320_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Handbags_1x._SY116_CB566100767_.jpg" alt="" />
               </div>
             </a>
-            <a href="/">
-              <div class="main-img_item">
-                <img src="/img/feature1.png" alt="" />
+            <a href="">
+              <div class="main-img_item circle">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_1x._SY116_CB564394432_.jpg" alt="" />
               </div>
             </a>
 
           </div>
           
-          <button class="left_btn">L</button>
-          <button class="right_btn">R</button>
+          <button class="left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="right_btn"><i class="fa-solid fa-chevron-right"></i></button>
+          
+        </div>
+
+        <div class="main-products">
+          <h3>Best Sellers In Toys &amp; Games</h3>
+          <div class="main-image_items">
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Toys_List_1X_EN._CB541659723_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Electronics_Gift_Guide_1X_EN._CB541659723_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Home_Decor_1X_EN._CB541659723_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Holiday_Shovler/Fuji_HolidayGG_Shoveler_Holiday_Fashion__1X_EN._CB541659723_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://m.media-amazon.com/images/I/71-wukhNsTL._AC_UL320_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Handbags_1x._SY116_CB566100767_.jpg" alt="" />
+              </div>
+            </a>
+            <a href="">
+              <div class="main-img_item">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_1x._SY116_CB564394432_.jpg" alt="" />
+              </div>
+            </a>
+
+          </div>
+          
+          <button class="left_btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="right_btn"><i class="fa-solid fa-chevron-right"></i></button>
           
         </div>
 
         <!-- <div class="main-products">
           <div class="main-products_title">
             <h3>Gift Ideas In Headphones &amp; Earbuds</h3>
-            <a href="/">Show more</a>
+            <a href="">Show more</a>
           </div>
           <div class="main-image_items">
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
 
             <button class="left_btn">L</button>
             <button class="right_btn">R</button>
@@ -463,16 +516,16 @@
         <div class="main-products">
           <h3>Best Sellers In Sports &amp; Outdoors</h3>
           <div class="main-image_items">
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
 
             <button class="left_btn">L</button>
             <button class="right_btn">R</button>
@@ -481,16 +534,16 @@
         <div class="main-products">
           <h3>Best Sellers In Books</h3>
           <div class="main-image_items">
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
 
             <button class="left_btn">L</button>
             <button class="right_btn">R</button>
@@ -499,16 +552,16 @@
         <div class="main-products">
           <h3>Best Sellers In Clothings, Shoes &amp; Jewlery</h3>
           <div class="main-image_items">
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
-            <a href="/"><img src="/img/feature1.png" alt="" /></a>
-            <a href="/"><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
+            <a href=""><img src="/img/feature1.png" alt="" /></a>
+            <a href=""><img src="/img/feature2.png" alt="" /></a>
 
             <button class="left_btn">L</button>
             <button class="right_btn">R</button>
@@ -523,7 +576,7 @@
         <div class="today-deal">
           <div class="deals-title">
             <h3>Today's Deals</h3>
-            <a href="/" class="link-light">Sea all deals</a>
+            <a href="" class="link-light">Sea all deals</a>
           </div>
           <div class="deals-image">
             <img src="/fidget-spinner.png" alt="" />
@@ -620,46 +673,46 @@
           </div>
           <div class="horizontal-line"></div>
           <div class="choose-country_container">
-            <a href="/" class="footer-top_logo"><img src="/amazon.png" alt="" /></a>
+            <a href="" class="footer-top_logo"><img src="/amazon.png" alt="" /></a>
             <div class="choose-country">
-              <i>l</i>
-              <a href="/">English</a>
-              <i>v</i>
+              <i class="fa-solid fa-globe"></i>
+              <a href="">English</a>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
             <div class="choose-country">
-              <i>l</i>
-              <a href="/">United States</a>
+              <img class="img-usa" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+              <a href="">United States</a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="footer-bottom_container">
             <div class="btm-articles_container">
-              <article>
+              <article class="btm-item">
                 <span>Amazon Music</span>
                 <p>Stream Millions of Songs</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>Amazon Ads</span>
                 <p>Reach customers wherever they spend their time</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>6pm</span>
                 <p>Score deals on fashion brands</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>AbeBooks</span>
                 <p>books, arts &amp; collectibles</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>ACX</span>
                 <p>Audio Book Made Easy</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>Sell on Amazon</span>
                 <p>Start a Selling Account</p>
               </article>
-              <article>
+              <article class="btm-item">
                 <span>Veeqo</span>
                 <p>Shopping Software Inventory Management</p>
               </article>
@@ -761,10 +814,10 @@
           <div class="conditions-container">
             <div class="condition-items">
               <ul>
-                <li><a href="/">Conditions of Use</a></li>
-                <li><a href="/">Privacy Notice</a></li>
-                <li><a href="/">Customer Health Data Privacy Disclosure</a></li>
-                <li><a href="/">Your Ads Privacy Choices</a></li>
+                <li><a href="">Conditions of Use</a></li>
+                <li><a href="">Privacy Notice</a></li>
+                <li><a href="">Customer Health Data Privacy Disclosure</a></li>
+                <li><a href="">Your Ads Privacy Choices</a></li>
                 <i>icon</i>
               </ul>
             </div>
@@ -776,6 +829,9 @@
 
     <!-- IMPORT SCRIPT -->
   <script src="script.js"></script>
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/b33e34e646.js" crossorigin="anonymous"></script>
   </body>
 
 </html>
