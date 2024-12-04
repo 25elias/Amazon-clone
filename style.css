@@ -40,6 +40,11 @@ button {
   border: none;
 }
 
+ul , li {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -217,7 +222,47 @@ p {
   overflow: hidden;
 }
 
+.sub-menu {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  top: 40px;
+  left: -150px;
+  width: 467px;
+  height: 420px;
+  background-color: #ffffff;
+  color: #111;
+  z-index: 1000;
+}
+.sub-menu h2 {
+  font-size: 16px;
+}
+.sub-menu li>a {
+  color: #11181f;
+}
+
+.sub-menu_bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  width: 100%;
+  padding: 0;
+  margin-top: 17px;
+}
+.sub-menu_btm-left  {
+  
+}
+.sub-menu_btm-right  {
+
+}
+
+
+
 .top-bar .nav-right {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 0 0 0 4px;
@@ -393,7 +438,7 @@ img {
 
 .products-grid {
   position: relative;
-  margin-top: -50vh;
+  margin-top: -65vh;
   width: 100%;
   z-index: 10;
 }
