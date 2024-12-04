@@ -224,12 +224,12 @@ p {
 
 .sub-menu {
   padding: 12px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 4px;
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: -150px;
   width: 467px;
   height: 420px;
@@ -243,20 +243,21 @@ p {
 .sub-menu li>a {
   color: #11181f;
 }
+.sub-menu a:hover {
+  text-decoration: 1px solid #11181f underline;
+}
 
 .sub-menu_bottom {
   display: flex;
   justify-content: space-between;
   gap: 70px;
   width: 100%;
-  padding: 0;
+  padding: 14px 20px;
   margin-top: 17px;
 }
-.sub-menu_btm-left  {
-  
-}
-.sub-menu_btm-right  {
 
+.btn-cta:hover .sub-menu {
+  display: flex;
 }
 
 
@@ -269,6 +270,7 @@ p {
 }
 
 .nav-right .nav-lang {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 10px 16px;
@@ -287,8 +289,7 @@ p {
 .nav-right .nav-lang .english {
   display: flex;
   gap: 4px;
-  
-margin-left: 4px;
+  margin-left: 4px;
   align-items: center;
 }
 
