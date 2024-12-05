@@ -223,7 +223,7 @@ p {
 }
 
 .sub-menu {
-  padding: 12px;
+  padding: 12px 24px;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -231,16 +231,23 @@ p {
   position: absolute;
   top: 50px;
   left: -150px;
-  width: 467px;
-  height: 420px;
+  width: 100%;
+  /* height: 420px; */
   background-color: #ffffff;
   color: #111;
   z-index: 1000;
 }
+.sub-menu .lang{
+  
+}
+.sub-menu .signup{
+
+}
+
 .sub-menu h2 {
   font-size: 16px;
 }
-.sub-menu li>a {
+.sub-menu a {
   color: #11181f;
 }
 .sub-menu a:hover {
@@ -250,13 +257,15 @@ p {
 .sub-menu_bottom {
   display: flex;
   justify-content: space-between;
-  gap: 70px;
   width: 100%;
   padding: 14px 20px;
   margin-top: 17px;
 }
 
-.btn-cta:hover .sub-menu {
+.btn-cta:hover .sub-menu.signup{
+  display: flex;
+}
+.btn-cta:hover .sub-menu.lang{
   display: flex;
 }
 
@@ -363,6 +372,49 @@ margin-left: 4px;
 }
 .nav-bar ul:first-child {
   padding-left: 0;
+}
+
+
+    /* SIDE-BAR NAV */
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  /* opacity: 0.5; */
+  z-index: 10;
+}
+.mobile-menu_container {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  background-color: #fff;
+  overflow: overlay;
+}
+.menu-hello {
+  display: flex;
+  gap: 16px;
+  background-color: #111;
+  padding: 16px;
+  color: #fff;
+}
+.menu-profile {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 2px;
+}
+.menu-hello h2 {
+  color: #fff;
+}
+
+.menu-trending {
+  padding: 16px;
+}
+.mobile-menu a {
+  color: #111;
 }
 
 /* Mainbody - Banner */
