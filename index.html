@@ -99,8 +99,8 @@
             <i class="fa-solid fa-caret-down"></i>
             <div class="sub-menu signup">
               <div class="sub-menu_top">
-                <button class="sign-btn_cta">Sign up</button>
-                <p>New customer? <span><a href="">Start here</a></span></p>
+                <a href="./pages/signin.html" class="sign-btn_cta">Sign in</a>
+                <p>New customer? <span><a href="./pages/signup.html">Start here</a></span></p>
               </div>
               <div class="sub-menu_bottom">
                   <ul class="sub-menu_btm-left">
@@ -141,9 +141,9 @@
 
       <!-- nav-bar -->
       <div class="nav-bar">
-        <div class="menu-all">
+        <div class="menu-all" id="open-toggle">
           <i class="fa-solid fa-bars"></i>
-          <button id="show-menu" onclick={showmenu}>All</button>
+          <button>All</button>
         </div>
         <div class="nav-all">
           <ul>
@@ -163,10 +163,10 @@
     </header>
     
     <!-- MOBILE MENU -->
-     <div class="mobile-menu">
+     <div class="mobile_menu" id="mobile-menu">
         <div class="mobile-menu_container">
           <div class="menu-hello">
-            <div class="menu-profile menu">
+            <div class="menu-profile">
               <img src="" alt="">
             </div>
             <h2>Hello, sign in</h2>
@@ -183,48 +183,48 @@
           <div class="menu-digital_content menu">
             <h2>Trending</h2>
             <ul>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
             </ul>
             <div class="horizontal-line"></div>
           </div>
           <div class="menu-digital_content menu">
             <h2>Trending</h2>
             <ul>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
             </ul>
             <div class="horizontal-line"></div>
           </div>
           <div class="menu-digital_content menu">
             <h2>Trending</h2>
             <ul>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
             </ul>
             <div class="horizontal-line"></div>
           </div>
           <div class="menu-digital_content menu">
             <h2>Trending</h2>
             <ul>
-              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">New Releases <span><i class="fa-solid fa-angle-left"></i></span></a></li>
-              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-left"></i></span></a></li>
+              <li><a href="">Best Sellers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">New Releases <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+              <li><a href="">Movers &amp; Shakers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
             </ul>
             <div class="horizontal-line"></div>
           </div>
 
         </div>
-        <div class="close-btn"><i class="fa-solid fa-close"></i></div>
+        <div class="close-btn" id="close-toggle" ><i class="fa-solid fa-close"></i></div>
      </div>
 
     <!-- Main Body -->
